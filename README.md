@@ -1,12 +1,13 @@
 Architecture
 ===================
 
-It's been said that "software is eating the world", yet software development teams waste time and money because they struggle to communicate software architecture. The diagrams are also disconnected from the code, which limits their usefulness for architectural improvement.
+It's been said that "software is eating the world", with lower start-up costs and a vastly expanded market for online services, the result is a global economy that for the first time will be fully digitally wired — the dream of every cyber-visionary of the early 1990s, finally delivered, a full generation later. Each organization’s cloud adoption journey is unique. In order to successfully execute your adoption, you need to understand your organization’s current state, the target state, and the transition required to achieve the target state. Knowing this will help you set goals and create work streams that will enable staff to thrive in the cloud.
 
-Software architecture diagrams are a great way to explain and document how a software system works. Static diagrams, whether drawn on a whiteboard or with a general purpose diagramming tool such as Microsoft Visio, tend to get out of date quickly and often don't reflect the real structure of the code. On the other hand, automatically generated diagrams, such as UML class diagrams created by reverse-engineering the code, typically show far too much detail, limiting their usefulness.
+Software architecture diagrams are a great way to explain and document how a software system works, yet software development teams waste time and money because they struggle to communicate software architecture. The diagrams are also disconnected from the code, which limits their usefulness for architectural improvement. Static diagrams, whether drawn on a whiteboard or with a general purpose diagramming tool such as Microsoft Visio, tend to get out of date quickly and often don't reflect the real structure of the code. On the other hand, automatically generated diagrams, such as UML class diagrams created by reverse-engineering the code, typically show far too much detail, limiting their usefulness.
 
 Modernization Journey
 -----------------------
+Industry trend shows the need to ensure that both business and technical stakeholders understand how cloud adoption will impact their owned and managed capabilities, hence we see the following stages on the modernization journey
 ### Crawl
   - Invest in engineering thought leadership
   - Focus on shipping product
@@ -41,6 +42,9 @@ Netflix journey to the cloud began in August of 2008, when they experienced a ma
   - New Skillset
   - Minimal Process
   - Empower Dev Teams
+  
+AWS Cloud Adoption Framework
+Cloud adoption requires that fundamental changes are discussed and considered across the entire organization, and that stakeholders across all organizational units—both outside and within IT—support these changes. The [AWS Cloud Adoption Framework][2] (AWS CAF) provides guidance that supports each unit in your organization so that each area understands how to update skills, adapt existing processes, and introduce new processes to take maximum advantage of the services provided by cloud computing.
 
 Availability Percentage calculation
 -----------------------------------
@@ -65,4 +69,5 @@ General purpose diagramming tools
 ---------------------------------
 There are a number of popular general purpose diagramming tools available that software teams typically use for creating software architecture diagrams. These include Microsoft Visio, OmniGraffle, draw.io, Creately, Gliffy, Lucidchart, etc. The key strength of a general purpose diagramming tool is that you can create almost any type of diagram you can imagine. You usually also have full control over what every element on your diagram canvas looks like because aspects such as element size, element alignment, line thickness, font size, text alignment, etc are all almost infinitely customisable. General purpose diagramming tools give you a lot of power.
 
-[1]: netflix/Netflix,md
+[1]: netflix/Netflix.md
+[2]: https://d0.awsstatic.com/whitepapers/aws_cloud_adoption_framework.pdf
