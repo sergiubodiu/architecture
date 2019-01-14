@@ -1,0 +1,37 @@
+html,body{
+    background-color: #e6e9e8
+}
+
+#cytoscape{
+  display: inline;
+  position: absolute;
+  top:0;
+  left:125px;
+  height: 95%;
+  margin-top:10px;
+  width:80%;
+}
+
+#orientationTitle, #dataTitle, #groupTitle, #dragTitle{
+  font-weight: bold;
+  border-bottom: thin solid black;
+  width: fit-content;
+  padding-right:5px;
+  margin-bottom:5px;
+}
+
+#controls{
+  height: 100px;
+  width:100px;
+  margin-bottom: 15px;
+  z-index:2;
+}
+
+#dataSelector, #groupSelector, #dragSelector{
+  margin-bottom: 15px;
+  z-index:2;
+}
+
+#controls .radioBtn{
+  display:block;
+}

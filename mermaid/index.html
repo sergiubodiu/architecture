@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="mermaid.min.css">
+</head>
+<body>
+  <div class="mermaid">
+    sequenceDiagram
+
+    participant OM as Ops Manager
+
+    participant OD as BOSH
+
+    participant FO as Artifact Repository
+
+    participant SC as Source Control
+
+    alt Install BOSH Add-Ons
+
+     OM->>FO:Download Add-On release
+     
+     OM->>OD:Login
+
+     OM->>OD:Upload Add-On release
+
+     OM->>SC:Download Add-On release manifest
+
+     OM->>OD:Backup current runtime-config
+
+     OM->>OD:Update current runtime-config with Add-On information
+
+     OM->>OM:Apply Changes
+
+    else
+
+    end
+  </div>
+  <script src="mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true});</script>
+</body>
+</html>

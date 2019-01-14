@@ -1,0 +1,63 @@
+<html>
+<head>
+<script src="https://rawgit.com/cytoscape/cytoscape.js/master/dist/cytoscape.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape-panzoom/2.5.2/cytoscape-panzoom.min.js"></script>
+<script src="https://cdn.rawgit.com/cpettitt/dagre/v0.7.4/dist/dagre.min.js"></script>
+<script src="https://unpkg.com/cytoscape-dagre@2.2.0/cytoscape-dagre.js"></script>
+<script src="https://unpkg.com/cytoscape-expand-collapse@3.1.1/cytoscape-expand-collapse.js"></script>
+<script src="https://unpkg.com/cytoscape-view-utilities@2.1.0/cytoscape-view-utilities.js"></script>
+<script src="https://unpkg.com/cytoscape-undo-redo@1.3.0/cytoscape-undo-redo.js"></script>
+<script src="app.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="dataSelector">
+     <div id="dataTitle">Data Set:</div>
+    <select id="dataSelect">
+      <option value="simpleEx">Simple Example</option>
+      <option value="twoEndStates">Two End States</option>
+    </select>
+  </div>
+
+  <div id="controls">
+    <div id="orientationTitle">Orientation:</div>
+    <div className="radioBtn">
+     <input type="radio" name="orient" value="BT" checked>
+      <label for="BT"><span></span>Up</label>
+     </div>
+    <div className="radioBtn">
+      <input type="radio" name="orient" value="TB"> 
+      <label for="grid"><span></span>Down</label>
+     </div>
+    <div className="radioBtn">
+      <input type="radio" name="orient" value="RL" id="cose">
+        <label for="cose"><span></span>Left</label>
+     </div>
+    <div className="radioBtn">
+      <input type="radio" name="orient" value="LR">
+        <label for="concentric"><span></span>Right</label>
+     </div>
+  </div> 
+  
+  <div id="groupSelector">
+     <div id="groupTitle">Group Nodes?</div>
+    <select id="groupSelect">
+      <option value="true">Yes</option>
+      <option value="false">No</option>
+    </select>
+  </div>
+  
+   <div id="dragSelector">
+     <div id="dragTitle">Drag Enabled?</div>
+    <select id="dragSelect">
+      <option value="false">No</option>
+      <option value="true">Yes</option>
+    </select>
+  </div>
+
+ <div id="cytoscape">
+ </div>
+</body>
+</html>

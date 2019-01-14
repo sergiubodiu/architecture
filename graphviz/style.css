@@ -1,0 +1,34 @@
+html,body{
+    background-color: #e6e9e8
+}
+
+#graphViz{
+  display: inline;
+  position: absolute;
+  top:0;
+  left:125px;
+}
+
+#orientationTitle, #dataTitle{
+  font-weight: bold;
+  border-bottom: thin solid black;
+  width: fit-content;
+  padding-right:5px;
+  margin-bottom:5px;
+}
+
+#controls{
+  height: 100px;
+  width:100px;
+  padding-bottom: 5px;
+  z-index:2;
+}
+
+#dataSelector{
+  margin-bottom: 20px;
+  z-index:2;
+}
+
+#controls .radioBtn{
+  display:block;
+}
